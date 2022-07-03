@@ -2,7 +2,7 @@
 A simple File handling program.
 When you're copying the code, make sure you change the 'PATH' Variable.
 
-## Methods
+## Requirements
 ```java
 // Specified path.
 private final String PATH = "PATH";
