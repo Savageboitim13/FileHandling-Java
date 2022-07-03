@@ -1,7 +1,7 @@
 # Filehandling-Java
 A simple File handling program.
 When you're copying the code, make sure you edit the
-```
+```java
 // Specified path.
 private final String PATH = "PATH";```
 Variable.
