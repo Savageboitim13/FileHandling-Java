@@ -5,14 +5,18 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 class Main {
-    private final String PATH = "C:\\Users\\Samuil\\IdeaProjects\\Test Projekt\\src\\Storages in Java";
+    private final String PATH = "PATH";
 
     public static void main(String[] args) {
         new Main().Run();
     }
 
     public void Run() {
+        new FileHandling().CreateFile(PATH);
         new FileHandling().GetFileInfo(PATH);
+        new FileHandling().ReadFile(PATH);
+        new FileHandling().OverwriteFile(PATH, "Function succeeded.");
+        new FileHandling().DeleteFileOrFolder(PATH);
     }
 }
 
@@ -67,6 +71,8 @@ class FileHandling {
             System.out.println("Readable: " + File.canRead());
             System.out.println("File size(bytes): " + File.length());
             System.out.println("Executable: " + File.canExecute());
+            System.out.println("Exists: " + File.exists());
+            System.out.println("Absolute file: " + File.getAbsoluteFile());
         } else {
             System.out.println("File doesn't exist.");
         }
@@ -75,19 +81,9 @@ class FileHandling {
     public void DeleteFileOrFolder(String Path) {
         File File = new File(Path);
         if (File.delete()) {
-            if (File.isFile()) {
-                System.out.println("Deleted the file: " + File.getName());
-            } else if (File.isDirectory()) {
-                System.out.println("Dleted the directory: " + File.getName());
-            } else {
-                System.out.println("Delete unknown type: " + File.getName());
-            }
-        } else if (File.isFile()){
-            System.out.println("Failed to delete the file.");
-        } else if (File.isDirectory()) {
-            System.out.println("Failed to delete the folder.");
+            System.out.println("Deleted file/directory: " + File.getName());
         } else {
-            System.out.println("Filed to delete unknown type.");
+            System.out.println("Failed to delete the file/directory: " + File.getName());
         }
     }
 
