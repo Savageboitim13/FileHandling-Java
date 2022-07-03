@@ -1,6 +1,5 @@
 # Filehandling-Java
-You can: <br/>
-```create files, overwrite files, read files, get files information, and delete files or folders.```
+A simple File handling program.
 
 ## Methods
 ```java
