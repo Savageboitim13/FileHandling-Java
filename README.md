@@ -1,6 +1,6 @@
 # Filehandling-Java
 A simple File handling program.
-When you're copying the code, make sure you change the 'PATH' Variable.
+When you're copying the code, make sure you edit the 'PATH' Variable.
 
 ## Requirements
 ```java
