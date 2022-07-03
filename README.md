@@ -6,7 +6,7 @@ When you're copying the code, make sure you edit the PATH Variable.
 private final String PATH = "PATH";
 ```
 
-## Requirements
+## Methods
 ```java
 // Creates a file in the specified path.
 CreateFile(String Path);
