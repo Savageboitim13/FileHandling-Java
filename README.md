@@ -1,12 +1,11 @@
 # Filehandling-Java
 A simple File handling program.
-When you're copying the code, make sure you edit the 'PATH' Variable.
+When you're copying the code, make sure you edit the ```java
+// Specified path.
+private final String PATH = "PATH";``` Variable.
 
 ## Requirements
 ```java
-// Specified path.
-private final String PATH = "PATH";
-
 // Creates a file in the specified path.
 CreateFile(String Path);
 
